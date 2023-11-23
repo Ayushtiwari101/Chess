@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="/FEWD-CA-2/index.css">
+</head>
+<body>
+    <header></header>
+    <h1 class="chess"><b>CHESS</b></h1>
+    <img src="/Assets/" alt="">
+
+    <div class="container">
+        <!-- Taking Inputs -->
+        <div><h1>PLAYER - 1</h1><div class="pd">
+            <input type="text" id="p1name" name="p1name" placeholder="Enter Name" onclick="playsound()">
+            <input type="text" id="p1nick" name="p1nick" placeholder="Nick name" onclick="playsound()">
+        </div></div>
+        <div><img src="/FEWD-CA-2/assets/image.png" alt=""></div>
+        <div><h1>PLAYER - 2</h1><div class="pd">
+            <input type="text" id="p2name" name="p2name" placeholder="Enter Name" onclick="playsound()">
+            <input type="text" id="p2nick" name="p2nick" placeholder="Nick name" onchange="getvalues()" onclick="playsound()">
+        </div></div>
+    </div>
+
+        <div class="ctime">
+            <select name="time" id="time" onchange="gettime()">
+                <option value="30" selected>30 min</option>
+                <option value="20">20 min</option>
+                <option value="10">10 min</option>
+            </select>
+        </div>
+        
+    <div class="instructions">
+        <a href="/FEWD-CA-2/Instruction-Page/instructions.html"><button id="inst"><h1 id="ins">Instructions</h1></button>
+        </div></a> 
+
+     <div class="play">
+        <a href="/FEWD-CA-2/GamePage/Game.html"><button id="play"><h1 id="play1">PLAY</h1></button> </a>
+     </div>
+    </div>
+    
+</body>
+</html>

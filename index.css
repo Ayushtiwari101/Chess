@@ -1,0 +1,82 @@
+*{
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body{
+    background: url("/FEWD-CA-2/assets/Home-bg.jpg");
+    background-size: cover; 
+    background-repeat: no-repeat;
+    height: 100vh;
+
+}
+h1{
+    color: white;
+    font-weight: bold;
+
+}
+.container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 10vh;
+    
+}
+.pd{
+    margin: 5%;
+}
+#p1name, #p2name{
+    width: 200px;
+    height: 40px;
+    border: 2px solid #101010;
+    border-radius: 20px;
+    background-color: #ecebf0;
+    color: black;
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+}
+.chess{
+    display: flex;
+    justify-content: center;
+    margin-top: 2vh;
+}
+.ctime{
+    display: flex;
+    justify-content: center;
+    margin-top: 2vh;
+}
+.ctime select{
+    width: 100px;
+    height: 30px;
+    background-color: #f6f1f1;
+    border: 2px solid #000;
+    color: black;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 5px;
+}
+.instructions{
+    margin-left: 42vw;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10vh;
+}
+#ins{
+    color: black;
+    font-weight: bold;
+}
+ #inst{
+    height: 70px;
+    width: 250px;
+    font-size: 20px;
+    font-weight: bold;
+ }
+ .play{
+    margin-left: 47vw;
+    margin-top: 3vh;
+ }
+ #play1{
+    color: black;
+ }
