@@ -8,7 +8,7 @@
 }
 
 body{
-    background:url(/FEWD-CA-2/assets/632-01145273en_Masterfile.jpg);
+    background:url(/assets/632-01145273en_Masterfile.jpg);
     background-size: 100% 100%;
     font-family: 'Open Sans', sans-serif;
     font-family: 'Oswald', sans-serif;
@@ -17,59 +17,62 @@ body{
     font-family: 'Work Sans', sans-serif;
     color: white;
     background-repeat: no-repeat;
-    height: 100vh;
-    width: 100vw;
-}
-/* Nav bar */
-nav{
-    display: flex;
-    justify-content: space-between;
-    height: 5%;
-    padding: 50px 100px;
-}
-
-nav div{
-    display: flex;
-    align-items: center;
-}
-
-.left img{
-    width: 50px;
-    margin-right: 25px;
-}
-
-.left img:hover{
-    transform: scale(1.1);
-    cursor: pointer;
-}
-
-.left p{
-    margin-top: 15px;
-    font-size: 20px;
-    color: #ffffff;
-    font-weight: 600;
+    height: 95vh;
 }
 
 .left p:hover{
     cursor: pointer;
     transform: scale(1.1);
 }
-
-.restart{
-    margin-top: 10px;
+#inst{
+    width: 120px;
+    height: 35px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    box-shadow: 2px 5px 4px 0px rgba(0, 0, 0, 0.25);
+    color: #070707;
+    font-weight: bold;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    margin-top: 5vh;
+    margin-left: 3vw;
+    padding-top: 1vh;
+}
+#reset{
+    position: absolute;
+    right: 200px;
+    top: 50%;
     width: 100px;
     height: 35px;
     border-radius: 10px;
     background-color: #ffffff;
     box-shadow: 2px 5px 4px 0px rgba(0, 0, 0, 0.25);
-    color: #7945E3;
+    color: #070707;
+    font-weight: bold;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+#reset:hover{
+    transform: scale(1.1);
+}
+#exit{
+    position: absolute;
+    right: 200px;
+    top: 56%;
+    width: 100px;
+    height: 35px;
+    border-radius: 10px;
+    box-shadow: 2px 5px 4px 0px rgba(0, 0, 0, 0.25);
+    color: #070707;
     font-weight: 600;
     font-size: 16px;
     border: none;
     cursor: pointer;
 }
-
-.restart:hover{
+#exit:hover{
     transform: scale(1.1);
 }
 
@@ -88,6 +91,7 @@ nav div{
     max-width: 580px;
     background-color: white;
     padding: 10px;
+    border: 3px solid #111111;
     border-radius: 10px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
@@ -96,7 +100,7 @@ nav div{
     display: grid;
     place-items: center;
     max-width: 550px;
-    border: 3px solid #111111;
+    border: 5px solid #111111; 
     border-radius: 5px;
     padding: 2px;
 }
@@ -106,7 +110,7 @@ nav div{
     grid-template-columns: repeat(8,1fr);
 }
 
-.board .divv{
+.board .div{
     display: flex;
 }
 
@@ -117,14 +121,14 @@ nav div{
     place-items: center;
 }
 
-.box{
+.square{
     margin: .5px;
     height: 65px;    
     width: 65px;
 }
 /* Image Size */
 .allimg{
-    width: 40px;
+    width: 60px;
     position: relative;
 }
 
@@ -176,15 +180,15 @@ nav div{
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
 
-.windiv h1{
+.score h1{
     font-size: 30px;
     padding: 20px;
     margin-bottom: 25px;
-    color: #7945E3;
+    color: #070707;
 }
 
-.windiv h2{
-    color: #855ECC;
+.score h2{
+    color: #0d0d0d;
     font-weight: 900;
 }
 .options{
@@ -195,7 +199,7 @@ nav div{
 }
 
 .options button{
-    background-color: #7945E3;
+    background-color: #0f0f10;
     width: 100px;
     height: 50px;
     border: none;
@@ -212,7 +216,7 @@ nav div{
 }
 
 #homebtn{
-    background-color: #BF93EF;
+    background-color: #0b0b0b;
 }
 
 #replay{
@@ -225,40 +229,83 @@ nav div{
     body{
         background: #0a0a0a;
     }
+.reset{
+        left: 150px;
+        
+    }
+    #reset {
+        top: 690px;
+    }
+    .exit {
+        left: 175px;
+    }
+    #exit {
+        top: 740px;
+    }
+    
 }
+/* Responsive for 650px*/
 
 @media (max-width:650px){
-    .box{
+    .square{
         width: 11vw;
         height: 11vw;
     }
     .allimg{
         width: 7vw;
     }
+    .reset{
+        left: 150px;
+        
+    }
+    #reset {
+        top: 690px;
+    }
+    .exit {
+        left: 175px;
+    }
+    #exit {
+        top: 740px;
+    }
+
 }
 
-/* Responsive for 950px*/
+/* Responsive for 480px*/
 
 @media screen and (max-width:480px) {
-    nav{
-        padding: 50px 25px;
+ 
+    .right{
+        margin-top: -80vw;
+        margin-left: -60vw; 
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-around;
     }
-    .left img{
-        margin-right: 10px;
+    .reset{
+        left: 125px;
+        
     }
+    .exit{
+        left: 125px;
+        
+    }
+    /* button#reset.reset{
+        margin-bottom: 50vh;
+    } */
     .chess{
         width: 80%;
         margin: auto;
-        height: 75%;
+        height: 40%;
     }
-    .box{
+    .square{
         width: 10vw;
         height: 10vw;
     }
     .allimg{
         width: 7vw;
     }
-    .windiv h1{
+    .score h1{
         margin-bottom: 10px;
     }
     .gameover .content{
