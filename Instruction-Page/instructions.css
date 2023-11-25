@@ -4,7 +4,7 @@
     color: rgb(243, 243, 247);
 }
 body{
-    background: url(/FEWD-CA-2/assets/instruction-bg.webp);
+    background: url(/assets/instruction-bg.webp);
     background-size: cover;
 }
 
@@ -44,7 +44,7 @@ body{
     display: flex;
     align-items: center;
     width: 90%;
-    border: 5px solid #f1f1f2;
+    border: 5px solid white;
     border-radius: 5px;
     margin: 10px;
     min-height: 50px;
@@ -59,13 +59,93 @@ body{
 .item:hover{
     transform: scale(1.1);
     transition: 0.5s;
-}
+} 
 .back{
     position: absolute;
     margin-top: 45vh;
     margin-left: 5vh;
 
 }
+#btn{
+    width: 125px;
+    height: 46px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    box-shadow: 2px 5px 4px 0px rgba(0, 0, 0, 0.25);
+    color: #070707;
+    font-weight: bold;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    margin-left: 35vw;
+    margin-top: 5vh;
+}
+#btn:hover{
+    transform: scale(1.1);
+}
 
+
+/* Responsive Design */
+
+@media screen and (max-width:750px) {
+    body{
+        background: rgb(1, 1, 1);
+    }
+    .main{
+        margin: auto
+    }
+}
+
+@media screen  and (max-width:680px){
+    body{
+        background: rgb(2, 2, 2);
+    }
+    .main{
+        width: 90%;
+    }
+    .Instructions {
+        margin: 0;
+        padding: 0;
+    }
+    .Instructions h1{
+        margin: auto;
+        font-size: 40px;
+        padding: 0;
+    }
+    .ul{
+        padding: 0;
+        font-size: 12px;
+        margin: 10px 0;
+        padding-left: 30px;
+        width: 90%;
+    }
+    .item{
+        padding: 2px;
+    }
+    .item img{
+        width: 25px;
+        padding: 2px;
+    }
+    .item p{
+        padding-left: 10px;
+    }
+
+    .next{
+        margin: 15px 0;
+    }
+    .items{
+        justify-content: center;
+    }
+    .back{
+        margin-top: 91vh;
+        margin-left: 15vw;
+    }
+    .btn{
+        position: absolute;
+        right: 50px;
+        bottom: 10px;
+    }
+
+}
 
 
