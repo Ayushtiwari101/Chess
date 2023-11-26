@@ -1,3 +1,4 @@
+/* Importing font */
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Style+Script&display=swap');
 *{
     margin: 0; 
@@ -97,13 +98,13 @@ h1{
 }
  #play{
     height: 30px;
-    width: 150px;
+    width: 200px;
     font-size: 20px;
     font-weight: bold;
     color: rgb(10, 10, 10);
     border-radius: 10px;
     background-color: #faf7f7;
-    margin-left: 45vw;
+    margin-left: 43.5vw;
     margin-top: 5vh;
     border: none;
     cursor: pointer;
@@ -113,6 +114,7 @@ h1{
     transform: scale(1.1);
 }
 
+/* responsive for 480px */
 @media screen and (max-width: 480px) {
     .container {
         flex-direction: column;
@@ -137,7 +139,7 @@ h1{
         margin-left: 130px;
     }
     #inst {
-        margin-left: 110px;
+        margin-left: 130px;
     }
 
 }
