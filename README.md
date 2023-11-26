@@ -1,6 +1,6 @@
-#Game Development CA-2
+# Game Development CA-2
 
-#Chess-Gambit
+# Chess-Gambit
 
 - Chess-Gambit is a normal 2 player chess game, played on a board with 64 black and white squares called a chessboard.
 - Both players has 16 pieces, which includes a king, queen, pair of rooks, pair of knights, pair of bishops, and 8 pawns.
@@ -10,8 +10,8 @@ Note:
 -The background image, background music and the sound effects may take some time to load, so please wait for few seconds and then enjoy the game.
 
 Deployed link of the project - https://chess-gambit.netlify.app/
-                    #Play Now 💁‍♂️
-#Instructions
+                    # Play Now 💁‍♂️
+# Instructions
 
 Every piece can be moved according to fixed rules.
 - Kings move one square in any direction.
@@ -37,6 +37,27 @@ The resources that I have used are:
 
 Screens - Home-Page, Instruction-Page, Game-Page 
 - For scores their will be winner and draw displayed screen in the Game-Page.
+
+- Home-Page:
+  ![Front-Page](https://github.com/Ayushtiwari101/Chess/assets/144461289/9c4c1e96-77d0-476a-8fb6-1bc7cd2b2a2a)
+
+-Instruction-Page:
+ ![Instruction-Page](https://github.com/Ayushtiwari101/Chess/assets/144461289/45568bea-111a-4adf-9b65-b3fd753b9186)
+
+- Game-Page:
+  ![Game-Page](https://github.com/Ayushtiwari101/Chess/assets/144461289/fcda2b1a-e42b-448b-aa1a-ab980a1de1c3)
+
+- Draw-Result:
+  ![Result-2](https://github.com/Ayushtiwari101/Chess/assets/144461289/239408cb-8ca7-4fff-8d05-1b4a9b7dce1b)
+
+- Winner-Result:
+  ![Result-1](https://github.com/Ayushtiwari101/Chess/assets/144461289/e483c0de-a53a-41d0-8488-e0393fe238d2)
+
+
+
+  
+
+
 
 
 
