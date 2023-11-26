@@ -1,6 +1,4 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&family=Oswald:wght@300&family=Roboto+Condensed:wght@900&family=Roboto:wght@300;400;700&family=Work+Sans&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 *{
     margin: 0; padding: 0;
     box-sizing: border-box;
@@ -10,20 +8,13 @@
 body{
     background:url(/assets/632-01145273en_Masterfile.jpg);
     background-size: 100% 100%;
-    font-family: 'Open Sans', sans-serif;
-    font-family: 'Oswald', sans-serif;
-    font-family: 'Roboto', sans-serif;
-    font-family: 'Roboto Condensed', sans-serif;
-    font-family: 'Work Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
     color: white;
     background-repeat: no-repeat;
     height: 95vh;
+    
 }
-
-.left p:hover{
-    cursor: pointer;
-    transform: scale(1.1);
-}
+/* Instruction button */
 #inst{
     width: 120px;
     height: 35px;
@@ -38,9 +29,15 @@ body{
     text-align: center;
     margin-top: 5vh;
     margin-left: 3vw;
-    padding-top: 1vh;
+    padding-top: .5vh;
 }
-#reset{
+.left p:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+/* Play-Again button */
+.restart{
     position: absolute;
     right: 200px;
     top: 50%;
@@ -55,9 +52,11 @@ body{
     border: none;
     cursor: pointer;
 }
-#reset:hover{
+.restart:hover{
     transform: scale(1.1);
 }
+
+/* exit button  */
 #exit{
     position: absolute;
     right: 200px;
@@ -72,7 +71,7 @@ body{
     border: none;
     cursor: pointer;
 }
-#exit:hover{
+.exit:hover{
     transform: scale(1.1);
 }
 
@@ -91,7 +90,6 @@ body{
     max-width: 580px;
     background-color: white;
     padding: 10px;
-    border: 3px solid #111111;
     border-radius: 10px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
@@ -100,7 +98,7 @@ body{
     display: grid;
     place-items: center;
     max-width: 550px;
-    border: 5px solid #111111; 
+    border: 3px solid #111111;
     border-radius: 5px;
     padding: 2px;
 }
@@ -110,7 +108,7 @@ body{
     grid-template-columns: repeat(8,1fr);
 }
 
-.board .div{
+.board .divv{
     display: flex;
 }
 
@@ -121,7 +119,7 @@ body{
     place-items: center;
 }
 
-.square{
+.box{
     margin: .5px;
     height: 65px;    
     width: 65px;
@@ -168,11 +166,13 @@ body{
     display: none;
 }
 
+/* winner section  */
 .gameover .content{
     background-color: white;
     width: 35%;
     height: 35%;
     border-radius: 10px;
+    color: #070707;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -180,15 +180,15 @@ body{
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
 
-.score h1{
+.windiv h1{
     font-size: 30px;
     padding: 20px;
     margin-bottom: 25px;
     color: #070707;
 }
 
-.score h2{
-    color: #0d0d0d;
+.windiv h2{
+    color: #0b0b0b;
     font-weight: 900;
 }
 .options{
@@ -199,7 +199,7 @@ body{
 }
 
 .options button{
-    background-color: #0f0f10;
+    background-color: #121212;
     width: 100px;
     height: 50px;
     border: none;
@@ -216,7 +216,7 @@ body{
 }
 
 #homebtn{
-    background-color: #0b0b0b;
+    background-color: #080808;
 }
 
 #replay{
@@ -229,83 +229,37 @@ body{
     body{
         background: #0a0a0a;
     }
-.reset{
-        left: 150px;
-        
-    }
-    #reset {
-        top: 690px;
-    }
-    .exit {
-        left: 175px;
-    }
-    #exit {
-        top: 740px;
-    }
-    
 }
-/* Responsive for 650px*/
-
-@media (max-width:650px){
-    .square{
-        width: 11vw;
-        height: 11vw;
-    }
-    .allimg{
-        width: 7vw;
-    }
-    .reset{
-        left: 150px;
-        
-    }
-    #reset {
-        top: 690px;
-    }
-    .exit {
-        left: 175px;
-    }
-    #exit {
-        top: 740px;
-    }
-
-}
-
 /* Responsive for 480px*/
 
 @media screen and (max-width:480px) {
- 
-    .right{
-        margin-top: -80vw;
-        margin-left: -60vw; 
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        justify-content: space-around;
+    nav{
+        padding: 45px 20px;
     }
-    .reset{
-        left: 125px;
-        
+    .left img{
+        margin-right: 10px;
     }
-    .exit{
-        left: 125px;
-        
+    .restart{
+        top: 90px;
+        right: 50px;
     }
-    /* button#reset.reset{
-        margin-bottom: 50vh;
-    } */
+    #exit{
+        top: 800px; 
+        left: 35vw;
+    }
     .chess{
         width: 80%;
         margin: auto;
-        height: 40%;
+        height: 75%;
     }
-    .square{
+    .box{
         width: 10vw;
         height: 10vw;
     }
     .allimg{
         width: 7vw;
     }
-    .score h1{
+    .windiv h1{
         margin-bottom: 10px;
     }
     .gameover .content{
