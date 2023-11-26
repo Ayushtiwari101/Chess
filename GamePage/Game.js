@@ -1,15 +1,13 @@
-
 var inst = document.getElementById('inst')
-var reset = document.getElementById('reset')
+var restart = document.getElementById('restart')
 var exit = document.getElementById('exit')
-
 
 inst.addEventListener('click', ()=>{
     clicksound()
     window.location.href = './../Instruction-Page/Instructions.html'
 })
 
-reset.addEventListener('click', ()=>{
+restart.addEventListener('click', ()=>{
     clicksound()
     var Time = localStorage.getItem('time')
     window.location.href = './Game.html'
@@ -17,18 +15,35 @@ reset.addEventListener('click', ()=>{
 
 exit.addEventListener('click', ()=>{
     clicksound()
-    window.location.href = '/index.html'
-} )
+    window.location.href = './../index.html'
+})
+
+var homebtn = document.getElementById('homebtn')
+var replay = document.getElementById('replay')
+
+homebtn.addEventListener('click', ()=>{
+    clicksound()
+    window.location.href = './../index.html'
+})
+
+replay.addEventListener('click', ()=>{
+    clicksound()
+    var Time = localStorage.getItem('time')
+    window.location.href = './Game.html'
+})
 
 var moves = 0
 
 movediv = document.getElementById('move')
 movediv.innerHTML = `${moves}`
 
+
 var p1name = localStorage.getItem('p1name')
 var p1nick = localStorage.getItem('p1nick')
+
 var p2name = localStorage.getItem('p2name')
 var p2nick = localStorage.getItem('p2nick')
+
 
 function gameover(){
     bgm.pause()
@@ -47,7 +62,7 @@ var aqua = 'aqua'
 
 //colorBoxes
 function colorBoxes() {
-    const color = document.querySelectorAll('.square')
+    const color = document.querySelectorAll('.box')
     color.forEach(color => {
         getId = color.id
         arr = Array.from(getId)
@@ -68,7 +83,7 @@ colorBoxes()
 
 // Inserting the imgs
 function insertimgs() {
-    document.querySelectorAll('.square').forEach(img => {
+    document.querySelectorAll('.box').forEach(img => {
         img.style.cursor = 'pointer'
         if (img.innerText.length !== 0) {
             if (img.innerText == 'Wpawn' || img.innerText == 'Bpawn') {
@@ -84,17 +99,18 @@ insertimgs()
 
 //Remove borders
 function removebdr(){
-    document.querySelectorAll('.square').forEach(item =>{
+    document.querySelectorAll('.box').forEach(item =>{
         item.style.border = 'none'
     })
 }
 
 //function to not remove the same team element
+
 function reddish() {
-    document.querySelectorAll('.square').forEach(i1 => {
+    document.querySelectorAll('.box').forEach(i1 => {
         if (i1.style.backgroundColor == yellow) {
 
-            document.querySelectorAll('.square').forEach(i2 => {
+            document.querySelectorAll('.box').forEach(i2 => {
 
                 if (i2.style.backgroundColor == green && i2.innerText.length !== 0) {
 
@@ -128,11 +144,12 @@ function reddish() {
     })
 }
 
+//castling
 tog = 1
 whiteCastleChance=true
 blackCastleChance=true
 var container = document.getElementById('container')
-document.querySelectorAll('.square').forEach(item => {
+document.querySelectorAll('.box').forEach(item => {
 
     item.addEventListener('click', function () {
 
@@ -151,7 +168,7 @@ document.querySelectorAll('.square').forEach(item => {
 
             killsound()
 
-            document.querySelectorAll('.square').forEach(i => {
+            document.querySelectorAll('.box').forEach(i => {
                 if (i.style.backgroundColor == yellow) {
                     blueId = i.id
                     blueText = i.innerText
@@ -202,6 +219,7 @@ document.querySelectorAll('.square').forEach(item => {
 
                     if (aside > 1 && document.getElementById(`b${a + 100 - 1}`).innerText.length !== 0) {
                         document.getElementById(`b${a + 100 - 1}`).style.backgroundColor = green
+
                     }
                     if (aup == 800) {
                         document.getElementById(`b${a}`).innerText = 'Wqueen'
@@ -215,6 +233,7 @@ document.querySelectorAll('.square').forEach(item => {
 
                     if (aside > 1 && document.getElementById(`b${a + 100 - 1}`).innerText.length == 0 && document.getElementById(`b${a + 100}`).innerText.length == 0) {
                         document.getElementById(`b${a + 100}`).style.backgroundColor = green
+
                     }
                 }
 
@@ -235,6 +254,7 @@ document.querySelectorAll('.square').forEach(item => {
                     }
                     if (aside > 1 && document.getElementById(`b${a - 100 - 1}`).innerText.length !== 0) {
                         document.getElementById(`b${a - 100 - 1}`).style.backgroundColor = green
+
                     }
                 }
             }
@@ -331,10 +351,12 @@ document.querySelectorAll('.square').forEach(item => {
                         break
                     }
                 }
+
                 item.style.backgroundColor = yellow
             }
 
             // KNIGHT
+
             if (item.innerText == `${toggle}knight`) {
 
                 if (aside < 7 && aup < 800) {
@@ -367,6 +389,7 @@ document.querySelectorAll('.square').forEach(item => {
             }
 
             // BISHOP
+
             if (item.innerText == `${toggle}bishop`) {
 
                 for (let i = 1; i < 9; i++) {
@@ -415,6 +438,7 @@ document.querySelectorAll('.square').forEach(item => {
             }
 
             // QUEEN
+
             if (item.innerText == `${toggle}queen`) {
 
                 for (let i = 1; i < 9; i++) {
@@ -520,7 +544,7 @@ document.querySelectorAll('.square').forEach(item => {
 
         // winning()
         numOfKings = 0
-        document.querySelectorAll('.square').forEach(win => {
+        document.querySelectorAll('.box').forEach(win => {
             if (win.innerText == 'Wking' || win.innerText == 'Bking') {
                 numOfKings += 1
             }
@@ -531,12 +555,12 @@ document.querySelectorAll('.square').forEach(item => {
                 // console.log(`${toggle}`) 
                 if (tog % 2 == 0) {
                     var winner = document.getElementById('winner')
-                    winner.textContent = `${p1name} Won the Game`
+                    winner.textContent = `${p1nick} Won the Game`
                     gameover()
                 }
                 else if (tog % 2 !== 0) {
                     var winner = document.getElementById('winner')
-                    winner.textContent = `${p2name} Won the Game`
+                    winner.textContent = `${p2nick} Won the Game`
                     gameover() 
                 }
             }, 100)
@@ -545,7 +569,7 @@ document.querySelectorAll('.square').forEach(item => {
 })
 
 // Moving the element
-document.querySelectorAll('.square').forEach(item => {
+document.querySelectorAll('.box').forEach(item => {
 
     item.addEventListener('click', function () {
 
@@ -557,7 +581,7 @@ document.querySelectorAll('.square').forEach(item => {
             blueId = item.id
             blueText = item.innerText
 
-            document.querySelectorAll('.square').forEach(item2 => {
+            document.querySelectorAll('.box').forEach(item2 => {
 
                 item2.addEventListener('click', function () {
 
@@ -648,7 +672,7 @@ document.querySelectorAll('.square').forEach(item => {
 
 // Prvents from selecting multiple elements
 z = 0
-document.querySelectorAll('.square').forEach(ee => {
+document.querySelectorAll('.box').forEach(ee => {
     ee.addEventListener('click', function () {
         z = z + 1
         if (z % 2 == 0 && ee.style.backgroundColor !== green && ee.style.backgroundColor !== 'aqua') {
@@ -658,7 +682,7 @@ document.querySelectorAll('.square').forEach(ee => {
     })
 })
 
-
+// time
 let interval
 var Time = localStorage.getItem('time')
 var timer = document.getElementById('time') 
@@ -675,12 +699,13 @@ interval = setInterval(()=>{
     }
 },60000)
 
-
+// background music
 let bgm = new Audio('./../assets/backgroundmusic1.mp3')
 
 bgm.play()
 bgm.loop = true
 
+// background sounds on clicking
 function clicksound(){
     let music = new Audio('./../assets/clicksound.wav')
     music.pause()
