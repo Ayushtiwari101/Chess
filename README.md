@@ -23,9 +23,9 @@ Every piece can be moved according to fixed rules.
 - Pawns move forward one square but capture diagonally.
 
 
-Reference taken from the youtube channels are: https://www.youtube.com/@AniaKubow 
+I have taken Reference from a youtube video: https://www.youtube.com/watch?v=Qv0fvm5B0EM&list=PLRD1Niz0lz1uR4W3ms6DygWMjXW-6hDB_&index=2
+https://www.youtube.com/@AniaKubow 
 https://www.youtube.com/@arrayofsilicon
-https://www.youtube.com/watch?v=Qv0fvm5B0EM&list=PLRD1Niz0lz1uR4W3ms6DygWMjXW-6hDB_&index=2
 
 The resources that I have used are:
 - Colorpick Eyedropper
