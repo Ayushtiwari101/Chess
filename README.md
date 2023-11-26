@@ -1,7 +1,7 @@
 # Game Development CA-2
 
 # Chess-Gambit
-
+Game Play
 - Chess-Gambit is a normal 2 player chess game, played on a board with 64 black and white squares called a chessboard.
 - Both players has 16 pieces, which includes a king, queen, pair of rooks, pair of knights, pair of bishops, and 8 pawns.
 - To win the game you have to kill the opponent's King with any of your piece.
