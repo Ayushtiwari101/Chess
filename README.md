@@ -1,15 +1,18 @@
 #Game Development CA-2
+
 #Chess-Gambit
+
 - Chess-Gambit is a normal 2 player chess game, played on a board with 64 black and white squares called a chessboard.
 - Both players has 16 pieces, which includes a king, queen, pair of rooks, pair of knights, pair of bishops, and 8 pawns.
 - To win the game you have to kill the opponent's King with any of your piece.
-- 
+  
 Note:
 -The background image, background music and the sound effects may take some time to load, so please wait for few seconds and then enjoy the game.
 
 Deployed link of the project - https://chess-gambit.netlify.app/
                     #Play Now 💁‍♂️
 #Instructions
+
 Every piece can be moved according to fixed rules.
 - Kings move one square in any direction.
 - Queens move horizontally, vertically as well as diagonally.
