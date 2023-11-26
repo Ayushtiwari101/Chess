@@ -44,7 +44,7 @@ Screens - Home-Page, Instruction-Page, Game-Page
 
 - Instruction-Page:
  ![Instruction-Page](https://github.com/Ayushtiwari101/Chess/assets/144461289/45568bea-111a-4adf-9b65-b3fd753b9186)
-# Scroll down in the instruction Page and click the PROCEED TO PLAY button.
+# - Scroll down in the instruction Page and click the "PROCEED TO PLAY" button.
 
 - Game-Page:
   ![Game-Page](https://github.com/Ayushtiwari101/Chess/assets/144461289/fcda2b1a-e42b-448b-aa1a-ab980a1de1c3)
