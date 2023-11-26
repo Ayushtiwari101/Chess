@@ -9,10 +9,10 @@
 Note:
 -The background image, background music and the sound effects may take some time to load, so please wait for few seconds and then enjoy the game.
 
-Deployed link of the project - https://chess-gambit.netlify.app/
-                    # Play Now 💁‍♂️
-# Instructions
+Deployed link of the project - https://chess-gambit.netlify.app/                    
+# Play Now 👆
 
+# Instructions
 Every piece can be moved according to fixed rules.
 - Kings move one square in any direction.
 - Queens move horizontally, vertically as well as diagonally.
@@ -41,7 +41,7 @@ Screens - Home-Page, Instruction-Page, Game-Page
 - Home-Page:
   ![Front-Page](https://github.com/Ayushtiwari101/Chess/assets/144461289/9c4c1e96-77d0-476a-8fb6-1bc7cd2b2a2a)
 
--Instruction-Page:
+- Instruction-Page:
  ![Instruction-Page](https://github.com/Ayushtiwari101/Chess/assets/144461289/45568bea-111a-4adf-9b65-b3fd753b9186)
 
 - Game-Page:
