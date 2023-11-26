@@ -1,4 +1,4 @@
-// Geting values from localStorage
+// Seting values in localStorage
 function getvalues(){
     var p1name = document.getElementById('p1name').value
     var p1nick = document.getElementById('p1nick').value
@@ -11,13 +11,14 @@ function getvalues(){
     localStorage.setItem('p2nick',p2nick)
 }
 
-// Time from localStorage
+// Seting time values in localStorage
 function gettime(){
     var time = document.getElementById('time').value
     localStorage.setItem('time', time)
 }
 var time = document.getElementById('time').value
 localStorage.setItem('time', time)
+
 
 //Sound Effects on clicking
 function playsound(){
