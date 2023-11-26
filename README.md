@@ -28,12 +28,11 @@ https://www.youtube.com/@arrayofsilicon
 
 The resources that I have used are:
 - Colorpick Eyedropper
-- flaticon.com
+- https://www.flaticon.com/
 - https://ytmp3convert.org/
-- editor.audio/
-- w3schools.com
-- Youtube.com
-- github.com
+- https://www.w3schools.com/
+- https://www.youtube.com/
+- https://github.com/
 - https://fonts.google.com/
 
 Screens - Home-Page, Instruction-Page, Game-Page 
